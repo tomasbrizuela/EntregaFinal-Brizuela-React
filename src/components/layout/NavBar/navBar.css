@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #350026;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 1px 1px 10px grey;
+}
+
+.logoMarca{
+    max-width: 40px;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 50%;
+}
+
+.listaSecciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    list-style: none;
+}
+
+.aSecciones{
+    text-decoration: none;
+    text-align: center;
+    font-family: "Poppins";
+    color: white;
+    font-weight: 700;
+}
+
+.aSecciones:hover{
+    text-decoration: underline;
+}

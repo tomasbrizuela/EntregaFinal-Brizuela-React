@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tituloProductos{
+    margin: 20px;
+    text-align: center;
+    font-family: Poppins;
+}
+
+.productList{
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid grey;
+    border-radius: 15px;
+    /* box-shadow: 1px 1px 20px rgb(211, 211, 211); */
+    column-gap: 20px;
+}
