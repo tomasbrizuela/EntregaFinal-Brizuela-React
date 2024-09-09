@@ -1,6 +1,6 @@
 import './ItemListContainer.css'
 import ProductCard from '../../common/productCard/ProductCard.jsx'
-export const ItemListContainer = ({ saludo }) => {
+export const ItemListContainer = ({ greeting }) => {
 
     return (
         <div>
@@ -9,7 +9,7 @@ export const ItemListContainer = ({ saludo }) => {
                 <h2 className='tituloProductos'>Productos Populares</h2>
             </div>
             <div className='productList'>
-                <p>{saludo}</p>
+                <p>{greeting}</p>
             </div>
         </div>
     )
