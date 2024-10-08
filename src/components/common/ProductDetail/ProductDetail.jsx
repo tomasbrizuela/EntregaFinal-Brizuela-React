@@ -1,4 +1,4 @@
-const ProductDetail = ({ img, title, price, min, add, number, error }) => {
+const ProductDetail = ({ img, title, price, min, add, number, error, Stock }) => {
     return (
         <div>
             <div>
@@ -11,6 +11,7 @@ const ProductDetail = ({ img, title, price, min, add, number, error }) => {
                 <img src={img} alt="" />
             </div>
             <div>
+                <p>{`Stock disponible: ${Stock}`}</p>
                 <button onClick={min}>-</button>
                 <p>{number}</p>
                 <button onClick={add}>+</button>
