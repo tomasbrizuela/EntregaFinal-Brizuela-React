@@ -1,4 +1,4 @@
-const ProductDetail = ({ id, img, title, price, stock, min, add, number }) => {
+const ProductDetail = ({ img, title, price, min, add, number, error }) => {
     return (
         <div>
             <div>
@@ -18,6 +18,9 @@ const ProductDetail = ({ id, img, title, price, stock, min, add, number }) => {
             <div>
                 <button>Buy now!</button>
             </div>
+            <p className="error">
+                {error}
+            </p>
         </div>
     )
 }
