@@ -1,6 +1,6 @@
 import './productCard.css';
 
-const ProductCard = ({ precio, nombre, img }) => {
+const ProductCard = ({ price, title, img }) => {
 
     return (
         <>
@@ -9,10 +9,10 @@ const ProductCard = ({ precio, nombre, img }) => {
                     <img src={img} alt="" className='productImg' />
                 </div>
                 <div>
-                    <h4 className='productTitle'>{nombre}</h4>
+                    <h4 className='productTitle'>{title}</h4>
                 </div>
                 <div>
-                    <p className='productPrice'>${precio}</p>
+                    <p className='productPrice'>${price}</p>
                 </div>
             </div>
         </>

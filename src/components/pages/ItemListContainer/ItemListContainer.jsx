@@ -1,17 +1,21 @@
 import './ItemListContainer.css'
 import ProductCard from '../../common/productCard/ProductCard.jsx'
-export const ItemListContainer = ({ greeting }) => {
+import ItemList from './ItemList.jsx'
+import { useEffect, useState } from 'react';
+import { products } from './../../../../productsMock.js'
+import { ContentPasteOffSharp } from '@mui/icons-material';
+export const ItemListContainer = () => {
+
+    const [productList, setProducts] = useState([]);
+
+    useEffect(() => {
+        setProducts(products)
+    }, [productList])
 
     return (
-        <div>
-            <div>
-
-                <h2 className='tituloProductos'>Productos Populares</h2>
-            </div>
-            <div className='productList'>
-                <p>{greeting}</p>
-            </div>
-        </div>
+        <>
+            <ItemList product={productList} />
+        </>
     )
 }
 
