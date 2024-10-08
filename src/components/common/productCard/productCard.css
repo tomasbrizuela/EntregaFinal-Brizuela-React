@@ -18,6 +18,7 @@
     box-sizing: border-box;
     cursor: pointer;
     width: 320px;
+    row-gap: 15px;
 }
 
 .productTitle{
@@ -43,4 +44,17 @@
     color: green;
     font-family: poppins;
     font-weight: 600;
+}
+
+button{
+    padding: 10px;
+    border-radius: 15px;
+    border: 0px white;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: 0.5s ease;
+    transform: scale(1.1);
+    background-color: grey;
 }
