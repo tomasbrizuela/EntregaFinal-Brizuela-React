@@ -1,8 +1,7 @@
-import { Link } from 'react-router-dom';
 import './productCard.css';
+import { Skeleton } from '@mui/material';
 
 const ProductCard = ({ id, price, title, img }) => {
-
     return (
         <>
             <div className='product'>
@@ -13,13 +12,9 @@ const ProductCard = ({ id, price, title, img }) => {
                     <h4 className='productTitle'>{title}</h4>
                 </div>
                 <div>
-                    <p className='productPrice'>${price}</p>
+                    {price ? <p className='productPrice'>${price}</p> : <Skeleton variant="rounded" width={300} height={60} />}
                 </div>
-                <div>
-                    <Link to={`/products/${id}`} >
-                        <button>See details!</button>
-                    </Link>
-                </div>
+
             </div>
         </>
     )

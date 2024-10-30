@@ -1,0 +1,41 @@
+.cartPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffe4c4;
+    font-family: poppins;
+}
+
+.cartItems{
+    max-width: 45%;
+    h2{
+        padding: 20px;
+        font-size: 30px;
+    }
+    font-family: poppins;
+}
+
+.paymentSummary{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 207, 255);
+    h3{
+        font-size: 50px;
+        text-align: center;
+        font-family: poppins;
+    }
+}
+
+.formConfirm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    padding: 30px;
+}

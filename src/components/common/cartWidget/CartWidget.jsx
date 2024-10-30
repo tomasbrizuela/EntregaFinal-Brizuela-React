@@ -3,11 +3,12 @@ import './cartWidget.css'
 import Badge from '@mui/material/Badge';
 import { Link } from 'react-router-dom';
 
-export const cartWidget = () => {
+export const CartWidget = ({ cart }) => {
+    console.log(cart)
     return (
         <>
             <Link to={'/cart'}>
-                <Badge badgeContent={4} color="primary">
+                <Badge badgeContent={cart.length} color="primary">
                     <ShoppingCartIcon className='cartWidget' />
                 </Badge>
             </Link>
@@ -15,4 +16,4 @@ export const cartWidget = () => {
     )
 }
 
-export default cartWidget
+export default CartWidget

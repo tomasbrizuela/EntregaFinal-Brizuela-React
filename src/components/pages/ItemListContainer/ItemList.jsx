@@ -7,7 +7,7 @@ const ItemList = ({ product }) => {
                 <h2 className='tituloProductos'>Productos Populares</h2>
             </div>
             <div className='productList'>
-                {
+                {product == false ? <h1 className="loading">Loading products...</h1> :
                     product.map((item) => {
                         return (
                             <div key={item.id}>

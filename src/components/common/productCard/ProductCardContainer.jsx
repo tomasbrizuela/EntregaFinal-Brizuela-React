@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom"
 import ProductCard from "./ProductCard"
 
 const ProductCardContainer = ({ product }) => {
     return (
         <>
-            <ProductCard {...product} />
+            <Link to={`/products/${product.id}`} style={{ "textDecoration": "none" }}>
+                <ProductCard {...product} />
+            </Link>
+
         </>
     )
 }

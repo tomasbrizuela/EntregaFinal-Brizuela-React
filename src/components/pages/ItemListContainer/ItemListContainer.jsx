@@ -1,16 +1,24 @@
 import './ItemListContainer.css'
-import ProductCard from '../../common/productCard/ProductCard.jsx'
 import ItemList from './ItemList.jsx'
 import { useEffect, useState } from 'react';
-import { products } from './../../../../productsMock.js'
-import { ContentPasteOffSharp } from '@mui/icons-material';
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../../../../firebaseConfig.js';
 export const ItemListContainer = () => {
 
     const [productList, setProducts] = useState([]);
 
     useEffect(() => {
-        setProducts(products)
-    }, [productList])
+        try {
+            let collectionProducts = collection(db, "productos");
+            getDocs(collectionProducts)
+                .then((res) => {
+                    let products = res.docs.map((item) => item.data())
+                    setProducts(products)
+                })
+        } catch (e) {
+            console.log(e)
+        }
+    }, [])
 
     return (
         <>
