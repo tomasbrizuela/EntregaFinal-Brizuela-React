@@ -21,7 +21,6 @@ export const CartContextProvider = ({ children }) => {
         } else {
             setCart(newCart)
         }
-        console.log(cart)
     }
 
     const addToCart = (product, quantity) => {

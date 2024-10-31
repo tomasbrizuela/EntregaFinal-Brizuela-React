@@ -4,7 +4,6 @@ import Badge from '@mui/material/Badge';
 import { Link } from 'react-router-dom';
 
 export const CartWidget = ({ cart }) => {
-    console.log(cart)
     return (
         <>
             <Link to={'/cart'}>

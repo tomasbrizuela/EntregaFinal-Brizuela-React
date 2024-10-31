@@ -20,7 +20,6 @@ const ProductDetailContainer = () => {
                 let listOfProducts = res.docs.map(item => item.data())
                 let productSelected = listOfProducts.find(item => item.id == id)
                 setProduct(productSelected);
-                console.log(productSelected)
             })
     }, [])
 

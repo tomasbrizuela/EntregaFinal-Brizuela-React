@@ -16,7 +16,6 @@ export const ItemListContainer = () => {
                     setProducts(products)
                 })
         } catch (e) {
-            console.log(e)
         }
     }, [])
 
