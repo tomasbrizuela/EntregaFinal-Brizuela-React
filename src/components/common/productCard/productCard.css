@@ -18,6 +18,7 @@
     box-sizing: border-box;
     cursor: pointer;
     width: 320px;
+    height: 320px;
     row-gap: 15px;
 }
 
@@ -35,9 +36,10 @@
 }
 
 .productImg{
-    width: 150px;
+    max-width: 150px;
+    max-height: 150px;
     border-radius: 15px;
-    box-shadow: 1px 1px 10px rgb(222, 222, 222);
+    
 }
 
 .productPrice{

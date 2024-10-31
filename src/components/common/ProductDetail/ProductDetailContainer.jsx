@@ -7,6 +7,7 @@ import { db } from '../../../../firebaseConfig';
 import { collection, getDocs } from 'firebase/firestore';
 
 const ProductDetailContainer = () => {
+    const [added, setAdded] = useState(false);
     const { action } = useContext(CartContext);
     const { id } = useParams();
     const [product, setProduct] = useState({});
@@ -44,7 +45,7 @@ const ProductDetailContainer = () => {
 
     return (
         <>
-            <ProductDetail {...product} add={addQuantity} min={minusQuantity} number={number} error={error} action={action} product={product} />
+            <ProductDetail {...product} add={addQuantity} min={minusQuantity} number={number} error={error} action={action} product={product} added={added} setter={setAdded} />
         </>
     )
 }

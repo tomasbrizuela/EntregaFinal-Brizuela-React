@@ -16,7 +16,7 @@ const CartItem = ({ id, title, quantity, img, total, deleteFromCart }) => {
                 <div>
                     {"Total: $" + total}
                 </div>
-                <div>
+                <div className='button'>
                     <button onClick={() => deleteFromCart(id)}>
                         <DeleteIcon />
                     </button>

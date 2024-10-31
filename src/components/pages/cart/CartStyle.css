@@ -39,3 +39,17 @@
     row-gap: 20px;
     padding: 30px;
 }
+
+.compraConfirmada{
+    background-color: rgb(78, 150, 78);
+    color: white;
+    font-family: poppins;
+    position: fixed;
+    width: 100%;
+    height: 150%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

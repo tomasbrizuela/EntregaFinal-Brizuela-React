@@ -1,7 +1,8 @@
 import { TextField } from "@mui/material"
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CartItemListContainer from "../../common/CartItemsList/CartItemListContainer"
 import './CartStyle.css'
-const Cart = ({ cart, total, buy, set }) => {
+const Cart = ({ cart, total, buy, set, visible, setVisible }) => {
     return (
         <div className="cartPage">
             <div className="cartItems">
@@ -39,13 +40,18 @@ const Cart = ({ cart, total, buy, set }) => {
 
                         style={{ fontSize: 9 }}
                     />
-                    <button>
+                    <button onClick={() => setVisible(true)}>
                         Confirmar
                     </button>
                 </div>
             }
 
-
+            {visible &&
+                <div className="compraConfirmada">
+                    <CheckCircleIcon style={{ fontSize: "140px", color: "#b4eeb4" }} />
+                    <h3>Compra confirmada!</h3>
+                    <p>Orden #</p>
+                </div>}
         </div>
     )
 }
