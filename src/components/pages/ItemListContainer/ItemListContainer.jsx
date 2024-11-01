@@ -1,4 +1,4 @@
-import './ItemListContainer.css'
+import './itemListContainer.css'
 import ItemList from './ItemList.jsx'
 import { useEffect, useState } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
